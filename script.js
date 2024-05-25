@@ -13,6 +13,14 @@ btnAdd.addEventListener("click", function () {
   location.reload();
 });
 
+input.addEventListener("keyup", (e) => {
+  if (e.key === "Enter") {
+    todoListArray.push(input.value);
+    localStorage.setItem("todoListArray", JSON.stringify(todoListArray));
+    location.reload();
+  }
+});
+
 function createTodoListItem(id, item) {
   const li = document.createElement("li");
   li.id = id;
