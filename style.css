@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #000;
+  color: #eee;
+}
+.container {
+  max-width: 600px;
+  min-width: 360px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #111;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.add-button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+input,
+button {
+  outline: none;
+  border: none;
+}
+input {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+button {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-add {
+  background-color: lightseagreen;
+}
+.btn-add:hover {
+  background-color: rgb(14, 88, 85);
+  color: #eee;
+}
+.btn-add:active {
+  background-color: rgb(7, 43, 41);
+}
+.btn-done {
+  background-color: lightseagreen;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.btn-delete {
+  background-color: orangered;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.todo-list,
+.completed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+li {
+  padding: 1rem;
+  background-color: #333;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  word-wrap: break-word;
+}
+li span {
+  word-wrap: break-word;
+}
